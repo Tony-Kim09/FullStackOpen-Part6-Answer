@@ -35,7 +35,7 @@ export const createAnecdote = (data) => {
     const newAnecdote = await anecdoteService.createNew(data)
     dispatch({
       type: 'NEW_ANECDOTE',
-      newAnecdote
+      data: newAnecdote
     })
   }
 }
